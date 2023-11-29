@@ -4,6 +4,7 @@ import { useSwiper } from "swiper/react";
 import { Navigation } from "swiper";
 import styles from "./Carousel.module.css";
 import "swiper/css";
+import "swiper/swiper-bundle.min.css";
 import CarouselLeftNavigation from "./CarouselLeftNavigation/CarouselLeftNavigation";
 import CarouselRightNavigation from "./CarouselRightNavigation/CarouselRightNavigation";
 
@@ -29,8 +30,8 @@ function Carousel({ data, renderComponent }) {
                 <Controls data={data} />
                 <CarouselLeftNavigation />
                 <CarouselRightNavigation />
-                {data.map((ele) => (
-                    <SwiperSlide>{renderComponent(ele)}</SwiperSlide>
+                {data.map((ele, index) => (
+                    <SwiperSlide key={index}>{renderComponent(ele)}</SwiperSlide>
                 ))}
 
             </Swiper>
