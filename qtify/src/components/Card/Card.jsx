@@ -17,8 +17,14 @@ function Card({ data, type}) {
                                     <div className={styles.banner}>
                                         <Chip
                                             label={`${follows} Follows`}
-                                            size="small"
-                                            className=""
+                                            className="black-chip"
+                                            variant="filled"
+                                            style={{
+                                                backgroundColor: 'black',
+                                                color: 'white',
+                                                fontSize: '0.75rem',
+                                                height: '30px',
+                                            }}
                                         />
                                     </div>
                                 </div>
@@ -36,9 +42,17 @@ function Card({ data, type}) {
                     <div className={styles.card}>
                         <img src={image} alt="song" loading="lazy" />
                         <div className={styles.banner}>
-                            <div className={styles.pills}>
-                                <p>{likes} Likes</p>
-                            </div>
+                            <Chip
+                                label={`${likes} Likes`}
+                                className="black-chip"
+                                variant="filled"
+                                style={{
+                                    backgroundColor: 'black',
+                                    color: 'white',
+                                    fontSize: '0.75rem',
+                                    height: '30px',
+                                }}
+                            />
                         </div>
                     </div>
                     <div className={styles.titleWrapper}>

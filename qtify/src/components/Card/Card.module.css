@@ -22,13 +22,13 @@
     padding: 6px;
 }
 
-.pill {
+/* .pill {
     font-size: 12px;
     background-color: var(--color-black);
     width: max-content;
     padding: 6px;
-    border-radius: 10px;
-}
+    border-radius: 15px;
+} */
 
 .titleWrapper {
     margin-top: 6px;
